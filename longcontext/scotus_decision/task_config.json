@@ -1,0 +1,16 @@
+{
+  "train_file": "train.jsonl",
+  "valid_file": "dev.jsonl",
+  "test_file": "test.jsonl",
+  "task_type": "classification",
+  "num_outputs": 2,
+  "num_inputs": 1,
+  "input_names": ["text_pl"],
+  "output_name": "label",
+  "metric": "accuracy",
+  "default_args": {
+    "num_train_epochs": 10,
+    "per_device_train_batch_size": 32,
+    "gradient_accumulation_steps": 1
+  }
+}
