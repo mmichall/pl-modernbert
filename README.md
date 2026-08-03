@@ -14,10 +14,10 @@ The following checkpoints are available as assets of the repository release:
 
 | Model | Context length | Parameters | Archive |
 |---|---:|---:|---|
-| Polish ModernBERT Base | 512 | 149M | `polish-modernbert-base.tar.gz` |
-| Polish ModernBERT Base | 8K | 149M | `polish-modernbert-8k-base.tar.gz` |
-| Polish ModernBERT Large | 512 | 475M | `polish-modernbert-large.tar.gz` |
-| Polish ModernBERT Large | 8K | 475M | `polish-modernbert-8k-large.tar.gz` |
+| Polish ModernBERT Base | 512 | 149M | `pl-modernbert-base-512.tar` |
+| Polish ModernBERT Base | 8K | 149M | `pl-modernbert-base-8192.tar` |
+| Polish ModernBERT Large | 512 | 475M | `pl-modernbert-large-512.tar` |
+| Polish ModernBERT Large | 8K | 475M | `pl-modernbert-large-8192.tar` |
 
 Each archive contains the model weights, configuration, and tokenizer files
 required to load the model with Hugging Face Transformers.
@@ -27,19 +27,17 @@ required to load the model with Hugging Face Transformers.
 After downloading and extracting an archive:
 
 ```bash
-tar -xzf polish-modernbert-8k-base.tar.gz
+tar -xzf pl-modernbert-base-512.tar
 ```
 
 ```python
 from transformers import AutoModel, AutoTokenizer
 
-model_path = "polish-modernbert-8k-base"
+model_path = "pl-modernbert-base-512"
 
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = AutoModel.from_pretrained(model_path)
 ```
-
-Checksums for the released archives are provided in `SHA256SUMS`.
 
 ## LongContext
 
@@ -74,7 +72,7 @@ nkjp_ner_star/
 ├── longcontext/          # LongContext benchmark
 ├── nkjp_ner_star/        # NKJP-NER* resources
 ├── README.md
-└── SHA256SUMS
+└── LICENCES.md
 ```
 
 The four model checkpoints are distributed as repository release assets.
