@@ -4,13 +4,13 @@ This anonymous repository accompanies the paper:
 
 **Polish ModernBERT: The Long and Short of Polish Language Understanding**
 
-The repository provides four Polish ModernBERT checkpoints together with the
+The repository provides the
 LongContext benchmark and the NKJP-NER* resources used in the paper. The
 repository will be de-anonymized and released publicly upon publication.
 
 ## Model checkpoints
 
-The following checkpoints are available as assets of the repository release:
+The following checkpoints will be available as assets of the repository release:
 
 | Model | Context length | Parameters | Archive |
 |---|---:|---:|---|
